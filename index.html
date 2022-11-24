@@ -16,19 +16,29 @@
             <div class="container">
                 <div class="row d-flex justify-content-around">
                     <div class="col-4">
-                        <div id="output-1"></div>
-                        <div id="output-2"></div>
-                        <br>
-                        <br>
-                        <div id="vittoria"></div>
-                        <br>
-                        <br>
-                        <a href="#" class="btn btn-primary" id="button-1">
-                            RANDOM
-                        </a>
+                        <div class="row">
+                            <div class="col-7 justify-content-between d-flex flex-column">
+                                <p class="m-2">Numero del giocatore:</p>
+                                <p class="m-2">Numero della macchina:</p>
+                                <p class="m-2">Chi ha vinto:</p>
+                            </div>
+                            <div class="col-5 justify-content-between d-flex flex-column">
+                                <div id="output-1" class="m-2"></div>
+                                <div id="output-2" class="m-2"></div>
+                                <div id="vittoria" class="m-2"></div>
+                            </div>
+                            <a href="#" class="btn btn-primary" id="button-1">
+                                RANDOM
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-4">
-
+                    <div class="col-4 justify-content-center d-flex flex-column">
+                        <p class="m-2">Inserisci il tuo nome (tutto minuscolo) + @gmail.com</p>
+                        <input type="text" id="mail" class="mb-2">
+                        <div id="trovata" class="mb-2"></div>
+                        <a href="#" class="btn btn-danger btn-lg" id="button-2">
+                            Vai
+                        </a>
                     </div>
                 </div>
             </div>

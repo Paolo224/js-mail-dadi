@@ -23,12 +23,49 @@ button.addEventListener('click' , function(){
         vincitore = "Pareggio!!!"
     }
     else if (randomNumberPc < randomNumberUtente){
-        vincitore = "Hai vinto tu!... TUTTA FORTUNA!!!!"
+        vincitore = "Tu!..."
     }
     else{
-        vincitore = "Ho vinto io!!!!! TIÉ!!!!"
+        vincitore = "Io!!!!! TIÉ!!!!"
     }
     
     document.getElementById('vittoria').innerHTML = vincitore;
 })
+
+
+
+const mail = [
+    "stefano@gmail.com",
+    "luigi@gmail.com",
+    "riccardo@gmail.com",
+    "paolo@gmail.com"
+]
+
+const buttonMail = document.getElementById('button-2');
+
+buttonMail.addEventListener('click', function(){
+
+    const inputMail = document.getElementById('mail').value;
+
+    let trovato = false;
+
+    for ( let i = 0; i < mail.length; i++){
+
+        if (inputMail == mail[i]){
+            trovato = true;
+        }
+
+    }
+
+    if (trovato == true){
+        document.getElementById('trovata').innerHTML = "Trovato"
+    }
+    else{
+        document.getElementById('trovata').innerHTML = "Non trovato"
+    }
+})
+
+
+
+
 
