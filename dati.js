@@ -9,18 +9,15 @@ let risultatoPc;
 const button = document.getElementById('button-1');
 
 button.addEventListener('click' , function(){
-    for( i = 1; i <= 6; i = i + 1){
-        randomNumberUtente = Math.floor(Math.random() * 7);
-        risultatoUtente = document.getElementById('output-1').innerHTML = "Il tuo numero: " + randomNumberUtente;
-    }
-    
-    for( i = 1; i <= 6; i = i + 1){
-        randomNumberPc = Math.floor(Math.random() * 7);
-        risultatoPc = document.getElementById('output-2').innerHTML = "Il mio numero: " + randomNumberPc;
-    }
-    
+
+    randomNumberUtente = Math.floor(Math.random() * 6 + 1);
+    document.getElementById('output-1').innerHTML = "Il tuo numero: " + randomNumberUtente;
+
+    randomNumberPc = Math.floor(Math.random() * 6 + 1);
+    document.getElementById('output-2').innerHTML = "Il mio numero: " + randomNumberPc;
+
+
     let vincitore;
-    
     
     if ( randomNumberPc === randomNumberUtente ){
         vincitore = "Pareggio!!!"
